@@ -1,0 +1,64 @@
+/* src/classicToast.css */
+.my-toast {
+  position: fixed;
+  z-index: 9999;
+}
+.my-toast.success {
+  background-color: #BFF3E0;
+  min-width: 394px;
+  min-height: 36px;
+  border-left: 8px solid #00D084;
+  border-radius: 8px;
+}
+.my-toast.warning {
+  background-color: #F6E7D0;
+  min-width: 394px;
+  min-height: 36px;
+  border-left: 8px solid #DB6A00;
+  border-radius: 8px;
+}
+.my-toast.error {
+  background-color: #FCE9E9;
+  min-width: 394px;
+  min-height: 36px;
+  border-left: 8px solid #DB1F22;
+  border-radius: 8px;
+}
+.my-toast .message {
+  margin-bottom: 5px;
+}
+.my-toast .subtitle {
+  font-size: 14px;
+}
+.my-toast.top-right {
+  top: 20px;
+  right: 20px;
+}
+.my-toast.top-left {
+  top: 20px;
+  left: 20px;
+}
+.my-toast.top-center {
+  top: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.my-toast.bottom-center {
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.my-toast.bottom-right {
+  bottom: 20px;
+  right: 20px;
+}
+.my-toast.bottom-left {
+  bottom: 20px;
+  left: 20px;
+}
+.my-toast.center {
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+/*# sourceMappingURL=index.css.map */
