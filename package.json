@@ -13,7 +13,7 @@
     "types": "index.d.ts",
     "typescript": "^5.2.2"
   },
-  "name": "classic-toast",
+  "name": "classic-toasts",
   "version": "1.0.0",
   "description": "Toasts messages for typescript and Javascript project",
   "main": "./dist/index.js",
