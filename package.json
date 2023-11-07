@@ -14,7 +14,7 @@
     "typescript": "^5.2.2"
   },
   "name": "classic-toasts",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Toasts messages for typescript and Javascript project",
   "main": "./dist/index.js",
   "module": "./dist/index.mjs",
@@ -24,7 +24,8 @@
   ],
   "scripts": {
     "test": "jest",
-    "build": "tsup"
+    "build": "tsup",
+    "prepublish": "tsc"
   },
   "repository": {
     "type": "git",
