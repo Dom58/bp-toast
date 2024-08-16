@@ -21,13 +21,13 @@ import 'classic-toasts/dist/index.css';
 
 ### Methods
 ```
-ClassicToast.success({message: "ADD_YOUR_SUCCESS_MESSAGE});
+ClassicToast.success({message: "ADD_YOUR_SUCCESS_MESSAGE"});
 ```
 ```
-ClassicToast.error({message: "ADD_YOUR_ERROR_MESSAGE})
+ClassicToast.error({message: "ADD_YOUR_ERROR_MESSAGE"})
 ```
 ```
-ClassicToast.warning({message: "ADD_YOUR_WARNING_MESSAGE})
+ClassicToast.warning({message: "ADD_YOUR_WARNING_MESSAGE"})
 ```
 ## Props
 

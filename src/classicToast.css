@@ -7,26 +7,27 @@
   transform: translate(-50%, -50%); /* Adjust for perfect centering */
   min-height: 36px;
   border-radius: 8px;
+  color: #000;
 }
 
 .my-toast.success {
-  background-color: #BFF3E0;
-  border-left: 8px solid #00D084;
+  background-color: #35b34a;
+  border-left: 8px solid #037a4f;
 }
 
 .my-toast.warning {
-  background-color: #F6E7D0;
-  border-left: 8px solid #DB6A00;
+  background-color: #ffa927;
+  border-left: 8px solid #af5e12;
 }
 
 .my-toast.error {
-  background-color: #FCE9E9;
-  border-left: 8px solid #DB1F22;
+  background-color: #ff0000;
+  border-left: 8px solid #c51215;
 }
 
 .my-toast.info {
-  background-color: #D9EDF7;
-  border-left: 8px solid #31708F;
+  background-color: #2eadec;
+  border-left: 8px solid #106894;
 }
 
 .my-toast .message {
