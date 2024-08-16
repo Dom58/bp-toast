@@ -8,7 +8,7 @@ This package is allowing all developers to customise their toast notifications
 ```
 1. npm install --save classic-toasts
 2. yarn add classic-toasts
-3. pnpm install classic-toasts
+3. pnpm add classic-toasts
 ```
 
 2. Import the package
