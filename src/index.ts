@@ -42,7 +42,10 @@ const worldClassToast = (type: string, options: ToastOptions): void => {
 
   const toastElement = document.createElement('div');
   toastElement.classList.add('my-toast', type, position);
+  toastElement.setAttribute('role', 'alert');
+  toastElement.setAttribute('aria-live', 'assertive');
 
+  // Apply any custom classes
   if (customClass) {
     const classList = customClass.split(' ');
     classList.forEach((className) => {
@@ -152,14 +155,17 @@ const worldClassToast = (type: string, options: ToastOptions): void => {
     }
   });
   toastElement.appendChild(closeElement);
-
   document.body.appendChild(toastElement);
 
+  // Set timeout for auto-close with fade-out animation
   if (timeout > 0) {
     setTimeout(() => {
-      if (toastElement.parentNode === document.body) {
-        document.body.removeChild(toastElement);
-      }
+      toastElement.classList.add('fade-out');
+      setTimeout(() => {
+        if (toastElement.parentNode === document.body) {
+          document.body.removeChild(toastElement);
+        }
+      }, 500); // match with fade-out duration
     }, timeout);
   }
 };
@@ -174,6 +180,9 @@ const classicToast = {
   error: (options: ToastOptions) => {
     worldClassToast('error', options);
   },
+  info: (options: ToastOptions) => {
+    worldClassToast('info', options);
+  }
 };
 
 export default classicToast;

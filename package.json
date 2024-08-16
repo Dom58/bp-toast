@@ -10,17 +10,20 @@
     "ts-node": "^10.9.1",
     "tsc-hooks": "^1.1.2",
     "tsup": "^7.2.0",
-    "types": "index.d.ts",
+    "types": "^0.1.1",
     "typescript": "^5.2.2"
   },
   "name": "classic-toasts",
-  "version": "1.0.3",
+  "version": "1.0.6",
   "description": "Toasts messages for typescript and Javascript project",
   "main": "./dist/index.js",
   "module": "./dist/index.mjs",
   "types": "./dist/index.d.ts",
   "files": [
-    "dist"
+    "dist/index.css",
+    "dist/index.d.ts",
+    "dist/index.js",
+    "dist/index.mjs"
   ],
   "scripts": {
     "test": "jest",

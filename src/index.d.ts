@@ -18,5 +18,6 @@ declare const classicToast: {
     success: (options: ToastOptions) => void;
     warning: (options: ToastOptions) => void;
     error: (options: ToastOptions) => void;
+    info: (options: ToastOptions) => void;
 };
 export default classicToast;
